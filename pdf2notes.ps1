@@ -34,7 +34,7 @@ Write-Host "loading加载中"
 # $WshShell = New-Object -comObject WScript.Shell
 
 
-Get-ChildItem -Path $pdfpattern -Recurse | Where-Object { $_.FullName -notlike '*_ori*' -and ($_.LastWriteTime - $_.CreationTime -gt (New-TimeSpan -seconds 300)) } | ForEach-Object {
+Get-ChildItem -Path $pdfpattern -Recurse | Where-Object { $_.FullName -notlike '*_ori*' } | ForEach-Object {
     $_.FullName
     $bookfile = $_.FullName.Substring(0, $_.FullName.LastIndexOf('.'))
     $pdf = $bookfile + ".pdf"
