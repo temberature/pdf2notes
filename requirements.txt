@@ -1,0 +1,6 @@
+###### Requirements without Version Specifiers ######
+pdfannots
+stapler
+jieba
+optparse
+win32clipboard
