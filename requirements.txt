@@ -2,5 +2,4 @@
 pdfannots
 stapler
 jieba
-optparse
-win32clipboard
+pywin32
